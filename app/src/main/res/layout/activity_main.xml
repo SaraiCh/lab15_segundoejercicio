@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:hint="Primer dato"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit1"
+        android:layout_marginTop="10dp"
+        android:hint="Segundo dato"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnsuma"
+        style="@style/Buton_operaciones"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="282dp"
+        android:layout_marginBottom="233dp"
+        android:onClick="setsuma"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btnmutiplicacion"
+        style="@style/Buton_operaciones"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="236dp"
+        android:onClick="setmultiplicacion"
+        android:text="x"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnresta"
+        style="@style/Buton_operaciones"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="234dp"
+        android:onClick="setresta"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btndivision"
+        style="@style/Buton_operaciones"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="323dp"
+        android:onClick="setdivision"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/btnpotencia"
+        style="@style/Buton_operaciones"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="148dp"
+        android:onClick="setpotencia"
+        android:text="^" />
+
+    <Button
+        android:id="@+id/btnraiz"
+        style="@style/Buton_operaciones"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="282dp"
+        android:layout_marginBottom="147dp"
+        android:onClick="setraiz"
+        android:text="raíz" />
+
+    <Button
+        android:id="@+id/modulo"
+        style="@style/Buton_operaciones"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="281dp"
+        android:layout_marginBottom="322dp"
+        android:onClick="setModulo"
+        android:text="mod"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnporcentaje"
+        style="@style/Buton_operaciones"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="322dp"
+        android:onClick="setporcentaje"
+        android:text="%" />
+
+    <Button
+        android:id="@+id/btnIn"
+        style="@style/Buton_operaciones"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="147dp"
+        android:onClick="setIn"
+        android:text="In" />
+
+    <Button
+        android:id="@+id/btnabsoluto"
+        style="@style/Buton_operaciones"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="414dp"
+        android:onClick="setabsoluto"
+        android:text="/x/"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="178dp"
+        android:layout_height="85dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="414dp"
+        android:backgroundTint="#EEEEEE"
+        android:text="NUEVO"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:id="@+id/btnnuevo"
+        android:onClick="setnuevo"/>
+
+    <TextView
+        android:id="@+id/tResultado"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="83dp"
+        android:background="@color/num"
+        android:gravity="center"
+        android:text="RESULTADO"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:text="Escriba los datos y luego selecciones la opción que desee. Si solo usa un dato, coloque el valor en el primer espacio"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="CALCULADORA"
+        android:textSize="40sp" />
+
+</RelativeLayout>
